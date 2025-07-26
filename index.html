@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta and Title -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Calculator with History</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- History Section -->
+    <div class="history-section">
+      <div class="history-buttons">
+        <button onclick="showHistory()">📜 History</button>
+        <button onclick="clearHistory()">🧹 Clear History</button>
+      </div>
+      <div class="history" id="historyBox"></div>
+    </div>
+
+    <!-- Calculator Buttons Section -->
+    <div class="calculator">
+      <!-- Display -->
+      <div id="display" class="display">0</div>
+
+      <!-- Row 1 -->
+      <button onclick="clearDisplay()" class="btn-light">AC</button>
+      <button onclick="deleteChar()" class="btn-light">DEL</button>
+      <button onclick="append('%')">%</button>
+      <button onclick="append('/')">/</button>
+
+      <!-- Row 2 -->
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('*')">*</button>
+
+      <!-- Row 3 -->
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('-')">-</button>
+
+      <!-- Row 4 -->
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('+')">+</button>
+
+      <!-- Row 5 -->
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="calculate()" class="btn-orange btn-wide">=</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Made by Shejan
+      <div class="social-icons">
+        <a href="https://www.instagram.com/iamshejan/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/farjan-ahmmed/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/shejanahmmed" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

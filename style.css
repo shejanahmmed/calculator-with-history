@@ -1,0 +1,139 @@
+/* Body Layout */
+body {
+  background-color: #f2f3f4;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  gap: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Calculator Container */
+.calculator {
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-gap: 15px;
+}
+
+/* Display Area */
+.display {
+  grid-column: span 4;
+  height: 60px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 10px;
+  text-align: right;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #3c3c3c;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.btn-orange {
+  background-color: #ff8c00;
+}
+
+.btn-light {
+  background-color: #5a5a5a;
+}
+
+.btn-wide {
+  grid-column: span 2;
+}
+
+/* History Section */
+.history-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+}
+
+.history-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.history-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3c3c3c;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.history-buttons button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.history {
+  width: 100%;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
